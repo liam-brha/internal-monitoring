@@ -1,0 +1,4 @@
+FROM node:alpine
+WORKDIR /Intermediate
+COPY . .
+CMD ["node", "index.js"]

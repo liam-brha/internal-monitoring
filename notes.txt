@@ -1,0 +1,11 @@
+// network creation
+docker network create my-net
+
+// for intermediatry server
+docker build -t interstatus .
+docker run -d --name interstatus --network my-net -p 50001 interstatus
+
+// status API
+docker build -t statusapi .
+docker run -d --name statusapi --network my-net -p 60000:60000 statusapi
+docker network connect bridge statusapi

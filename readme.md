@@ -4,6 +4,8 @@ This was an experiment more than anything. It seeks to provide a page where you 
 
 "Services" refers to the node server instances that run in containers.
 
+# How it works
+
 The intermediary server allows servers on the user defined docker network bridge to make POST requests with information about the server.
 
 This should include
